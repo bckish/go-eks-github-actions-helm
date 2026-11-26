@@ -1,0 +1,9 @@
+replicaCount: 2
+image:
+  repository: go-eks-api
+  tag: local
+  pullPolicy: IfNotPresent
+appVersion: local
+resources:
+  requests: {cpu: 50m, memory: 32Mi}
+  limits: {cpu: 250m, memory: 64Mi}
